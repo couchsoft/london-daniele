@@ -21,6 +21,11 @@
         "email": "simon@couchsoft.de",
         "url": "https://www.couchsoft.de"
     },
+    "keywords": [
+        "ghost",
+        "theme",
+        "ghost-theme"
+    ],
     "gpm": {
         "type": "theme",
         "categories": [
