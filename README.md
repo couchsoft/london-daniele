@@ -1,62 +1,38 @@
 # London
 
-A custom, image-centric theme for [Ghost](http://github.com/tryghost/ghost/). Made for publishers and portfolios with plenty of graphics to show off to the world. Completely free and fully responsive, released under the MIT license.
+A custom theme for scientists, based on Ghosts [London-Theme](https://london.ghost.io)
 
-**Demo: https://london.ghost.io**
+# Usage
 
-&nbsp;
+## Static homepage
+To create a static front page with customized content please follow these steps:
+1. Create a new page and give it a title
+2. Change the Page URL of this page to "home" (in settings tab of the page)
+3. Add some content to your page
 
-![london](https://user-images.githubusercontent.com/120485/50552024-84837400-0c82-11e9-8f1d-cf25962c7e62.jpg)
-
-
-&nbsp;
-
-# First time using a Ghost theme?
-
-Ghost uses a simple templating language called [Handlebars](http://handlebarsjs.com/) for its themes.
-
-We've documented our default theme pretty heavily so that it should be fairly easy to work out what's going on just by reading the code and the comments. Once you feel comfortable with how everything works, we also have full [theme API documentation](https://themes.ghost.org) which explains every possible Handlebars helper and template.
-
-**The main files are:**
-
-- `default.hbs` - The main template file
-- `index.hbs` - Used for the home page
-- `post.hbs` - Used for individual posts
-- `page.hbs` - Used for individual pages
-- `tag.hbs` - Used for tag archives
-- `author.hbs` - Used for author archives
-
-One neat trick is that you can also create custom one-off templates just by adding the slug of a page to a template file. For example:
-
-- `page-about.hbs` - Custom template for the `/about/` page
-- `tag-news.hbs` - Custom template for `/tag/news/` archive
-- `author-ali.hbs` - Custom template for `/author/ali/` archive
+This page is now shown as content on your home page.
 
 
-# Development
+## List of Publications
+1. Create a new page and give it a title
+1. Choose the Template "Publications" from the template list (bottom of settings tab of the page)
+1. Give your page some optional content (will be shown above the post list)
+1. Create a tag **for each** category in your publications list (eg. Books). The slug of this tag has to be in the form: "publication-books". You can give your category an image which will be shown in the publications list.
+1. Create any number of posts, each representing a publication. Assign those posts to one of the publication tags created in the last step (eg. "publication-books").
+1. Create a link in your menu that points to your page created in step 1.
 
-London styles are compiled using Gulp/PostCSS to polyfill future CSS spec. You'll need [Node](https://nodejs.org/), [Yarn](https://yarnpkg.com/) and [Gulp](https://gulpjs.com) installed globally. After that, from the theme's root directory:
 
-```bash
-$ yarn install
-$ yarn dev
-```
+## List of Travels
+Just follow steps 1 to 6 above. Replace each "publication" by "travel" (watch upper and lowercase).
 
-Now you can edit `/assets/css/` files, which will be compiled to `/assets/built/` automatically.
 
-The `zip` Gulp task packages the theme files into `dist/<theme-name>.zip`, which you can then upload to your site.
-
-```bash
-$ yarn zip
-```
-
-# PostCSS Features Used
-
-- Autoprefixer - Don't worry about writing browser prefixes of any kind, it's all done automatically with support for the latest 2 major versions of every browser.
-- Variables - Simple pure CSS variables
-- [Color Function](https://github.com/postcss/postcss-color-function)
+## News section
+To create a news page, follow these steps. A news page will show the latest 5 posts each of publications and travels categories.
+1. Create a new page and give it a title (eg. News)
+1. Choose the Template "News" from the template list (bottom of settings tab of the page)
+1. Give your page some optional content (will be shown above the post list)
+1. Create a link in your menu that points to your page created in step 1.
 
 
 # Copyright & License
-
-Copyright (c) 2013-2019 Ghost Foundation - Released under the [MIT license](LICENSE).
+Copyright (c) 2013-2019 Simon Bernard - Released under the [MIT license](LICENSE).
