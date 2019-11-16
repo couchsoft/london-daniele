@@ -2,21 +2,29 @@
 {{!-- The tag above means: insert everything in this file
 into the {body} of the default.hbs template --}}
 
+
 {{#get "pages" filter="slug:home" limit="1" as |post|}}
   {{#post}}
-    <article class="post-content {{post_class}} {{#unless feature_image}}no-image{{/unless}}">
-        <header class="post-content-header">
-            <h1 class="post-content-title">{{title}}</h1>
-        </header>
-        {{#if feature_image}}
-        <div class="post-content-image">
-            <img class="kg-image" src="{{feature_image}}" alt="{{title}}" />
+  <article class="post-content">
+    <div class="row">
+      {{#if feature_image}}
+        <div class="col-6">
+          <img src="{{feature_image}}" alt="{{title}}" style="margin-top: 1rem;" />
         </div>
-        {{/if}}
-        <div class="post-content-body">
-            {{content}}
+        <div class="col-6">
+          <div class="post-content-body">
+              {{content}}
+          </div>
         </div>
-    </article>
+      {{else}}
+        <div class="col-12">
+          <div class="post-content-body">
+              {{content}}
+          </div>
+        </div>
+      {{/if}}
+    </div>
+  </article>
   {{/post}}
 {{else}}
   {{#if @site.description}}

@@ -7,8 +7,9 @@ A custom theme for scientists, based on Ghosts [London-Theme](https://london.gho
 ## Static homepage
 To create a static front page with customized content please follow these steps:
 1. Create a new page and give it a title
-2. Change the Page URL of this page to "home" (in settings tab of the page)
-3. Add some content to your page
+1. Change the Page URL of this page to "home" (in settings tab of the page)
+1. Add some content to your page
+1. Optionally: add a feature image to this page, the image will be rendered in a left column on the home page
 
 This page is now shown as content on your home page.
 
@@ -17,7 +18,7 @@ This page is now shown as content on your home page.
 1. Create a new page and give it a title
 1. Choose the Template "Publications" from the template list (bottom of settings tab of the page)
 1. Give your page some optional content (will be shown above the post list)
-1. Create a tag **for each** category in your publications list (eg. Books). The slug of this tag has to be in the form: "publication-books". You can give your category an image which will be shown in the publications list.
+1. Create a tag **for each** category in your publications list (eg. Books). The slug of this tag has to be in the form: "publication-books".
 1. Create any number of posts, each representing a publication. Assign those posts to one of the publication tags created in the last step (eg. "publication-books").
 1. Create a link in your menu that points to your page created in step 1.
 
