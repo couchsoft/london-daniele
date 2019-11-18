@@ -19,7 +19,7 @@ This page is now shown as content on your home page.
 1. Choose the Template "Publications" from the template list (bottom of settings tab of the page)
 1. Give your page some optional content (will be shown above the post list)
 1. Create a tag **for each** category in your publications list (eg. Books). The slug of this tag has to be in the form: "publication-books".
-1. Create any number of posts, each representing a publication. Assign those posts to one of the publication tags created in the last step (eg. "publication-books").
+1. Create any number of posts, each representing a publication. Assign those posts to one of the publication tags created in the last step (eg. "publication-books"). Give those posts a custom excerpt as this will be used to render the list items.
 1. Create a link in your menu that points to your page created in step 1.
 
 
