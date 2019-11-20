@@ -16,8 +16,8 @@ into the {body} of the default.hbs template --}}
         {{content}}
     </div>
   {{/post}}
-  
-  {{#get "tags" filter="slug:>travel+slug:<=travel-x"}}
+
+  {{#get "tags" filter="slug:>travel+slug:<=travel-x" order="slug asc"}}
     {{#foreach tags}}
         {{> category}}
         {{#get "posts" filter="tag:{{slug}}" order="published_at desc" limit="all"}}

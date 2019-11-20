@@ -17,7 +17,7 @@ into the {body} of the default.hbs template --}}
     </div>
   {{/post}}
 
-  {{#get "tags" filter="slug:>publication+slug:<=publication-x"}}
+  {{#get "tags" filter="slug:>publication+slug:<=publication-x" order="slug asc"}}
     {{#foreach tags}}
         {{> category}}
         {{#get "posts" filter="tag:{{slug}}" order="published_at desc" limit="all"}}
