@@ -20,11 +20,13 @@ into the {body} of the default.hbs template --}}
 
 </article>
 
-{{#get "posts" order="published_at desc" limit="9"}}
-    <div class="post-feed">
+<article class="post-content">
+	{{#get "posts" order="published_at desc" limit="8"}}
+		<div class="post-feed" style="max-width: 720px;">
 			{{#foreach posts}}
 				{{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
 				{{> "post-card"}}
 			{{/foreach}}
-    </div>
-  {{/get}}
+		</div>
+	{{/get}}
+</article>

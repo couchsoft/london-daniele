@@ -28,3 +28,24 @@ h2, h3, h4, h5, h6 {
 .hide {
   display: none;
 }
+
+.post-card {
+  background: none;
+  height: 25vh;
+  border: 1px solid rgba(0, 0, 0, 0.13);
+}
+.post-card-content {
+  color: #fff;
+}
+.post-card .post-card-title {
+  font-size: 1.9rem;
+}
+.post-card .post-card-title {
+  font-size: 1.9rem;
+}
+.post-card .post-card-title:hover {
+  text-decoration: underline;
+}
+.post-card:before {
+  content: none;
+}

@@ -5,11 +5,7 @@ For the rest, just output a smaller background image
 
 --}}
 
-{{#has number="nth:3"}}
-<article class="post-card {{post_class}} post-card-large {{#if feature_image}}with-image" style="background-image: url({{img_url feature_image size="xl"}}){{else}}no-image{{/if}}">
-{{else}}
-<article class="post-card {{post_class}} {{#if feature_image}}with-image" style="background-image: url({{img_url feature_image size="l"}}){{else}}no-image{{/if}}">
-{{/has}}
+<article class="post-card post" {{#if feature_image}}style="background-image: url({{img_url feature_image size="l"}})"{{/if}}>
     <a class="post-card-link" href="{{url}}">
         <div class="post-card-content">
             <h2 class="post-card-title">{{title}}</h2>
