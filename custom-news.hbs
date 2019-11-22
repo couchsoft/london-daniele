@@ -18,25 +18,13 @@ into the {body} of the default.hbs template --}}
     </div>
   {{/post}}
 
-  <h2>Publications</h2>
-  {{#get "posts" filter="tag:>publication+tag:<=publication-x" include="tags" order="published_at desc" limit="5"}}
-    <div class="post-content-body">
-      <ol reversed>
-        {{#foreach posts}}
-            {{> "post-list"}}
-        {{/foreach}}
-      </ol>
-    </div>
-  {{/get}}
-
-  <h2>Talks</h2>
-  {{#get "posts" filter="tag:>travel+tag:<=travel-x" include="tags" order="published_at desc" limit="5"}}
-    <div class="post-content-body">
-      <ol reversed>
-        {{#foreach posts}}
-            {{> "post-list"}}
-        {{/foreach}}
-      </ol>
-    </div>
-  {{/get}}
 </article>
+
+{{#get "posts" order="published_at desc" limit="9"}}
+    <div class="post-feed">
+			{{#foreach posts}}
+				{{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
+				{{> "post-card"}}
+			{{/foreach}}
+    </div>
+  {{/get}}
