@@ -1,6 +1,9 @@
-# London
+# London Scientific
+London-scientific is a custom theme for scientists, based on Ghost's
+[London-Theme](https://london.ghost.io)
 
-A custom theme for scientists, based on Ghosts [London-Theme](https://london.ghost.io)
+In 2019 I have commissioned to Simon Bernard a Ghost blog theme that was suited for scientists. I indicated the style and my personal workflow, and Simon coded this entirely.
+Simon can no longer work on the project, and this is my fork of the theme, which I continue to adopt for [www.danieleaviatbile.com](www.danieleavitabile.com). 
 
 # Usage
 
@@ -36,4 +39,4 @@ To create a news page, follow these steps. A news page will show the latest 5 po
 
 
 # Copyright & License
-Copyright (c) 2013-2019 Simon Bernard - Released under the [MIT license](LICENSE).
+Copyright 2018-2019 Simon Bernard - Released under the [MIT license](LICENSE).
