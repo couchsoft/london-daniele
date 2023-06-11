@@ -1,6 +1,6 @@
 # London Scientific
 London-scientific is a custom theme for scientists, based on Ghost's
-[London-Theme](https://london.ghost.io)
+[London-Theme](https://london.ghost.io), developed for www.danieleavitabile.com
 
 In 2019 I have commissioned to Simon Bernard a Ghost blog theme that was suited for scientists. I indicated the style and my personal workflow, and Simon coded this entirely.
 Simon can no longer work on the project, and this is my fork of the theme, which I continue to adopt for [www.danieleaviatbile.com](www.danieleavitabile.com). 
@@ -53,8 +53,8 @@ $(".hide").toggleClass("hide", plain === "true");
 </script> 
 ````
 
-Calling, for instance http:www.danieleavitabile.com/list-of-publications/?plain=true
-returns a flat list that can be copied.
+Calling, for instance `http:www.danieleavitabile.com/list-of-publications/?plain=true`
+gives a flat list that can be copied.
 
 # Copyright & License
 Copyright 2018-2019 Simon Bernard - Released under the [MIT license](LICENSE).
