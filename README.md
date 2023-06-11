@@ -37,6 +37,24 @@ To create a news page, follow these steps. A news page will show the latest 5 po
 1. Give your page some optional content (will be shown above the post list)
 1. Create a link in your menu that points to your page created in step 1.
 
+## Flat lists for easy conversion to CV
+It is sometimes useful to turn pages with long list of publications and conferences
+into text that can be copy and pasted for CVs or similar tasks. This is achieved by
+injecting the following code
+
+````
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script> 
+<script> 
+const urlParams = new URLSearchParams(window.location.search); 
+const plain = urlParams.get('plain'); 
+$(document).ready(function () { 
+$(".hide").toggleClass("hide", plain === "true"); 
+}); 
+</script> 
+````
+
+Calling, for instance http:www.danieleavitabile.com/list-of-publications/?plain=true
+returns a flat list that can be copied.
 
 # Copyright & License
 Copyright 2018-2019 Simon Bernard - Released under the [MIT license](LICENSE).
