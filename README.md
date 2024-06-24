@@ -1,6 +1,9 @@
-# London
+# London Scientific
+London-scientific is a custom theme for scientists, based on Ghost's
+[London-Theme](https://london.ghost.io), developed for www.danieleavitabile.com
 
-A custom theme for scientists, based on Ghosts [London-Theme](https://london.ghost.io)
+In 2019 I have commissioned to Simon Bernard a Ghost blog theme that was suited for scientists. I indicated the style and my personal workflow, and Simon coded this entirely.
+Simon can no longer work on the project, and this is my fork of the theme, which I continue to adopt for [www.danieleaviatbile.com](www.danieleavitabile.com). 
 
 # Usage
 
@@ -34,6 +37,24 @@ To create a news page, follow these steps. A news page will show the latest 5 po
 1. Give your page some optional content (will be shown above the post list)
 1. Create a link in your menu that points to your page created in step 1.
 
+## Flat lists for easy conversion to CV
+It is sometimes useful to turn pages with long list of publications and conferences
+into text that can be copy and pasted for CVs or similar tasks. This is achieved by
+injecting the following code
+
+````
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script> 
+<script> 
+const urlParams = new URLSearchParams(window.location.search); 
+const plain = urlParams.get('plain'); 
+$(document).ready(function () { 
+$(".hide").toggleClass("hide", plain === "true"); 
+}); 
+</script> 
+````
+
+Calling, for instance `http:www.danieleavitabile.com/list-of-publications/?plain=true`
+gives a flat list that can be copied.
 
 # Copyright & License
-Copyright (c) 2013-2019 Simon Bernard - Released under the [MIT license](LICENSE).
+Copyright 2018-2019 Simon Bernard - Released under the [MIT license](LICENSE).
